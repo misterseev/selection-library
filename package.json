@@ -1,0 +1,72 @@
+{
+  "name": "seevang-selection",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A searchable, animated select component built with React, TailwindCSS, and Framer Motion.",
+  "main": "./dist/seevang-selection.cjs",
+  "module": "./dist/seevang-selection.mjs",
+  "types": "./dist/types/lib.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/types/lib.d.ts",
+        "default": "./dist/seevang-selection.mjs"
+      },
+      "require": {
+        "types": "./dist/types/lib.d.ts",
+        "default": "./dist/seevang-selection.cjs"
+      }
+    },
+    "./style.css": "./dist/seevang-selection.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc -p tsconfig.lib.json",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "prepublishOnly": "pnpm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.168.19",
+    "framer-motion": "^12.38.0",
+    "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@tailwindcss/vite": "^4.2.2",
+    "@types/node": "^24.12.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.58.0",
+    "vite": "^8.0.4"
+  },
+  "keywords": [
+    "react",
+    "select",
+    "selection",
+    "dropdown",
+    "searchable",
+    "tailwindcss",
+    "framer-motion",
+    "component"
+  ],
+  "license": "MIT"
+}
