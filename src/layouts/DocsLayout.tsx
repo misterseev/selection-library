@@ -28,7 +28,7 @@ export function DocsLayout() {
               Docs
             </Link>
             <a
-              href="https://github.com"
+              href="https://github.com/misterseev/selection-library"
               target="_blank"
               rel="noreferrer"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors"

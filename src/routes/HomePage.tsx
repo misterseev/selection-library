@@ -128,7 +128,7 @@ export function HomePage() {
               DOCS
             </Link>
             <a
-              href="https://github.com"
+              href="https://github.com/misterseev/selection-library"
               target="_blank"
               rel="noreferrer"
               className="text-white/40 hover:text-white transition-colors"
